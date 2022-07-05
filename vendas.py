@@ -2,7 +2,7 @@ from Funcoes import *
 
 def menu():
     print("Bem-vindo ao ...!")
-    produtos = []
+    todos_produtos = []
     while(True):
         print("(1) Cadastrar produto")
         print("(2) Ver quantidade de produtos")
@@ -12,14 +12,14 @@ def menu():
         print("(6) Historico de vendas")
         opcao=int(input("Escolha a opção desejada: "))
         if (opcao == 1):
-            produto = cadastrar_produto()
-            produtos.append(produto)
+            produto_cadastrado = cadastrar_produto()
+            todos_produtos.append(produto_cadastrado)
         elif(opcao == 2):
             ver_quantidade_produto()
         elif(opcao == 3):
-            listar_produtos(produtos)
+            listar_produtos(todos_produtos)
         elif(opcao == 4):
-            vender_produto()
+            vender_produto(todos_produtos)
         elif(opcao == 5):
             repor_produto()
         elif(opcao == 6):
