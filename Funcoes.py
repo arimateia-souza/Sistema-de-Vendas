@@ -13,22 +13,27 @@ def cadastrar_produto():
     return produtos
 
 def ver_quantidade_produto(todos_produtos):
-    nome = input("Qual produto voce quer ver a quantidade?: ")
+    print()
+
 
 
 def listar_produtos(todos_produtos):
-    print(todos_produtos) #falta formatar em tabela
+    print('_' * 40)
+    print(f'{"LISTA DE PRODUTOS":^40}')
+    print('_' * 40)
+    #for
+        #print(todos_produtos) #falta formatar em tabela
 
 def vender_produto(todos_produtos):
-    print("vender")
+    nome = input("Qual produto voce quer vender?: ")
 
 
 
 
 def repor_produto(todos_produtos):
     nome = input("Qual produto voce quer repor?: ")
-    #produtos.append()
-def historico_vendas():
+
+def historico_vendas(todos_produtos):
     print("entrou na funçao historico")
 
 
