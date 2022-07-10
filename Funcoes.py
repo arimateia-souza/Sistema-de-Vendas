@@ -21,8 +21,8 @@ def listar_produtos(todos_produtos):
     print('_' * 40)
     print(f'{"LISTA DE PRODUTOS":^40}')
     print('_' * 40)
-    #for
-        #print(todos_produtos) #falta formatar em tabela
+    for i in range(0, len(todos_produtos)):
+        print(todos_produtos[i])
 
 def vender_produto(todos_produtos):
     nome = input("Qual produto voce quer vender?: ")
