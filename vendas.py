@@ -13,8 +13,9 @@ def menu():
         print("(7) Sair")
         opcao=int(input("Escolha a opção desejada: "))
         if (opcao == 1):
-            produto_cadastrado = cadastrar_produto()
-            todos_produtos.append(produto_cadastrado) #ok
+            todos_produtos.append(cadastrar_produto)
+            print(todos_produtos)
+
 
         elif(opcao == 2):
             ver_quantidade_produto(todos_produtos)
@@ -30,7 +31,6 @@ def menu():
 
         elif(opcao == 6):
             historico_vendas()
-
         elif (opcao == 7):
             print("O programa foi finalizado") #ok
             break
