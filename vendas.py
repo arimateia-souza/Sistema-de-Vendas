@@ -13,9 +13,7 @@ def menu():
         print("(7) Sair")
         opcao=int(input("Escolha a opção desejada: "))
         if (opcao == 1):
-            todos_produtos.append(cadastrar_produto)
-            print(todos_produtos)
-
+            todos_produtos.append(cadastrar_produto())
 
         elif(opcao == 2):
             ver_quantidade_produto(todos_produtos)
