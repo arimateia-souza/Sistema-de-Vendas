@@ -35,12 +35,6 @@ def vender_produto(todos_produtos):
                 print("Seu produto foi vendido com sucesso")
                 produto[2] = produto[2] - quantidade
                 return todos_produtos
-
-            elif (quantidade >= produto[2]):
-                print("Quantidade insuficiente no estoque ")
-                quantidade = int(input("Digite novamente sua quantidade : "))
-                produto[2] = produto[2] - quantidade
-                print("Seu produto foi vendido com sucesso ")
         else:
             print(" Você digitou o nome do produto errado")
 
