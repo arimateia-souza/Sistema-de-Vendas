@@ -4,7 +4,7 @@ def menu():
     print("Bem-vindo ao ...!")
     todos_produtos = []
     while(True):
-        print("(1) Cadastrar produto") #ok
+        print("(1) Cadastrar produto")
         print("(2) Ver quantidade de produtos")
         print("(3) Listar produtos")
         print("(4) Vender um produto")
@@ -25,13 +25,12 @@ def menu():
             vender_produto(todos_produtos)
 
         elif(opcao == 5):
-            repor_produto()
+            repor_produto(todos_produtos)
 
         elif(opcao == 6):
-            historico_vendas()
+            historico_vendas(todos_produtos)
         elif (opcao == 7):
-            print("O programa foi finalizado") #ok
+            print("O programa foi finalizado")
             break
-        else: print("opção invalida, tente novamente!") #ok
+        else: print("opção invalida, tente novamente!")
 menu()
-
